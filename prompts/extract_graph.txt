@@ -1,0 +1,34 @@
+-Goal-
+Given a text document about a loan application business, identify entities and relationships that are explicitly stated or strongly supported by the text.
+
+Use the document as the sole evidence for organization-specific facts. FIBO concepts are a vocabulary guide, not evidence of a bank's policies.
+
+-FIBO vocabulary guidance-
+Prefer concepts aligned with FIBO LoanApplications when appropriate:
+LoanApplication, BorrowerAssessment, CreditRiskAssessment, BorrowerMonthlyIncome,
+AllBorrowersMonthlyIncome, TotalDebtExpenseRatio, IndividualPersonCreditRating,
+IncomeVerificationReport, PreApprovalRequest, PreApprovalContract,
+UnderwritingDecision, LoanApplicationPhase, LoanApplicationStatus, PublicRecord.
+Namespace:
+https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/
+
+Also extract enterprise-specific concepts when supported by text: EligibilityRule, RequiredDocument,
+WorkflowStep, APIEndpoint, Service, BusinessRequirement, TestScenario, and ApplicationSubmitted event.
+Do not force these operational concepts into FIBO classes.
+
+-Relationship guidance-
+Capture meaningful directed relationships and use concise, consistent labels. Examples:
+LoanApplication SUBMITTED_BY Borrower
+LoanApplication EVALUATED_BY CreditRiskAssessment
+CreditRiskAssessment USES_FACTOR BorrowerMonthlyIncome
+CreditRiskAssessment USES_FACTOR TotalDebtExpenseRatio
+CreditRiskAssessment PRODUCES UnderwritingDecision
+BusinessRule IMPLEMENTED_BY Service
+WorkflowStep REQUIRES RequiredDocument
+BusinessRequirement VALIDATED_BY TestScenario
+ApplicationIntakeService EMITS ApplicationSubmitted
+
+Only emit relationships supported by text. Do not invent numeric thresholds, actual decisions, legal requirements, or system behavior.
+
+-Output-
+Follow the GraphRAG extraction output format exactly. Keep descriptions concise and preserve meaningful source terminology.

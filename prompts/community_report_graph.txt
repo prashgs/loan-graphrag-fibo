@@ -1,0 +1,5 @@
+You are creating a community report for a loan-application knowledge graph.
+
+Summarize the entities and relationships in this community. Highlight loan application stages, borrower assessments, credit risk factors, underwriting decisions, business rules, documents, services, and dependencies only where supported by graph evidence.
+
+Distinguish standardized FIBO financial concepts from enterprise-specific workflow or implementation concepts. Do not invent policy thresholds or claim legal/regulatory requirements without evidence.

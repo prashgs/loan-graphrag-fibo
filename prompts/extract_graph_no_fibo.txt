@@ -1,0 +1,14 @@
+-Goal-
+Given a text document about a loan application business, identify entities and relationships that are explicitly stated or strongly supported by the text.
+
+-Extraction policy-
+Extract concepts using the terminology present in the source text. Do not use, consult, or infer from FIBO or any other external ontology or controlled vocabulary. Do not normalize entity names to ontology labels. Keep organization-specific and operational concepts when supported by the text.
+
+-Entity guidance-
+Identify relevant people, organizations, loan products, applications, assessments, decisions, rules, documents, workflow steps, services, financial measures, events, and other meaningful concepts. This list is illustrative, not a fixed taxonomy. Use concise, consistent entity types. Do not force entities into a predefined list if another type better fits the source.
+
+-Relationship guidance-
+Capture meaningful directed relationships and use concise, consistent labels. Preserve source terminology where practical. Only emit relationships supported by text. Do not invent numeric thresholds, actual decisions, legal requirements, or system behavior.
+
+-Output-
+Follow the GraphRAG extraction output format exactly. Keep descriptions concise and preserve meaningful source terminology.

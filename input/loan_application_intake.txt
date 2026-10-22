@@ -1,0 +1,6 @@
+Document: Loan application intake
+Document ID: sample-intake-001
+
+A borrower submits a loan application with the requested amount, intended loan purpose, application date, and information about income and existing debt. The intake workflow checks that mandatory fields are present. If required information is missing, the application is marked incomplete and returned to the applicant for correction.
+
+The application intake service stores the application and emits an ApplicationSubmitted event. A loan officer can review the application status and the list of outstanding documents. The organization-specific field names and status codes are implementation details and should be mapped to canonical domain concepts where possible.

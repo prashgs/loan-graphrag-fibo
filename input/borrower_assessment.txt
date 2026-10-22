@@ -1,0 +1,6 @@
+Document: Borrower assessment and credit risk
+Document ID: sample-assessment-002
+
+The borrower assessment gathers income verification evidence and a credit report. The credit risk assessment may consider borrower monthly income, combined monthly income for all borrowers, credit history, existing debt payments, and the total debt expense ratio. The assessment produces an underwriting decision.
+
+The underwriting decision may be approve, deny, refer for manual review, eligible, ineligible, or unable to determine, depending on the workflow. The sample does not define numeric eligibility thresholds. A reviewer must consult the current approved business rule before deciding whether a particular application qualifies.

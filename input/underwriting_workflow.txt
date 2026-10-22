@@ -1,0 +1,8 @@
+Document: Underwriting workflow and services
+Document ID: sample-underwriting-003
+
+After intake validation, the eligibility service evaluates an application against the applicable eligibility rules. The credit decision service requests a credit report and uses the borrower assessment as an input. If information cannot be verified, the application may be referred for manual review.
+
+The document verification workflow tracks required documents, including income verification evidence. A business rule can specify which documents are required for a loan product. The underwriting decision and its reason must be recorded with a link to the supporting evidence and the source document describing the rule.
+
+The names of services, workflow steps, rules, and document checklists in this sample are illustrative placeholders, not production policy.

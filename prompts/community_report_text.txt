@@ -1,0 +1,1 @@
+Write a concise, evidence-grounded report about this loan-application knowledge-graph community. Explain the concepts, how they relate, and any operational implications. Do not infer unsupported rules or decisions. Identify ambiguity when present.
